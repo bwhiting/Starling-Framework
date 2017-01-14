@@ -92,7 +92,10 @@ package starling.textures
 
             updateMatrices();
         }
-
+		public function forceUpdate():void
+		{
+			updateMatrices();
+		}
         private function updateMatrices():void
         {
             if (_transformationMatrix) _transformationMatrix.identity();
